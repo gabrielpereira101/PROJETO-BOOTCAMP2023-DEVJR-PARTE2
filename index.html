@@ -63,29 +63,31 @@
         width: 60vh;
     }
 
-    .retangulos{
-        
-        background-color: blue;
-        width: 25%;
-        margin: 10px;
-        height: 270px;
+    .retangulos {
+  background-color: blue;
+  width: 25%;
+  margin: 10px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-        }
-
-    .retangulos_c{
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 10px;
-        position: relative;
-        top: 50%;
-        transform: translateY(-80%);
-        text-align: center;
-    }
-    .retangulos object {
-        height: 60%;
-    }
+.retangulos_c {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-80%);
+  text-align: center;
+}
+.retangulos object {
+  height: 60%;
+  filter: brightness(0) invert(1);
+}
 
     .icone1 {
         position: absolute;
@@ -116,7 +118,48 @@
   filter: brightness(0) invert(1);
 }
 
+.votar-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 120px;
+}
 
+    .retangulos_c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .retangulos {
+  background-color: blue;
+  width: 25%;
+  margin: 10px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icone1, .icone2, .icone3 {
+  height: 50%;
+}
+
+
+
+object {
+  height: 60%;
+  filter: brightness(0) invert(1) saturate(0) brightness(1.2);
+}
 
 </style>
 
@@ -145,20 +188,22 @@
             <div class="retangulos_c">
                 <div class="retangulos">
                     esporte
-                    <object data="icone1.svg" type="image/svg+xml"></object>
+                    <object data="icone1.svg" type="image/svg+xml"></object>`
+                    <button class="votar-btn" type="submit">Votar</button> 
                 </div>
                 <div class="retangulos">
                     simulação
                     <object data="icone2.svg" type="image/svg+xml"></object>
+                    <button class="votar-btn" type="submit">Votar</button>
                 </div>
                 <div class="retangulos">
                     estratégia
                     <object data="icone3.svg" type="image/svg+xml"></object>
+                    <button class="votar-btn" type="submit">Votar</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 
 </html>
