@@ -27,6 +27,7 @@
         justify-content: center;
         align-items: center;
         font-size:xx-large;
+        border-radius: 10px;
     }
 
     .div_estamos {
@@ -43,6 +44,42 @@
         width: 85%;
         height: 70%;
         align-self: center;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 60vh;
+    }
+
+    .retangulos{
+        
+        background-color: blue;
+        width: 30%;
+        margin: 10px;
+        height: 220px;
+
+        }
+
+    .retangulos_c{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 10px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-70%);
+        text-align: center;
     }
 </style>
 
@@ -63,6 +100,21 @@
         <div class="segunda_coluna">
             <div class="div_escolha">
                <p>Digite seus dados e escolha três finalistas!</p> 
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="Digite seu nome">
+                <input type="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="retangulos_c">
+                <div class="retangulos">
+                    esporte
+                </div>
+                <div class="retangulos">
+                    simulação
+                </div>
+                <div class="retangulos">
+                    estratégia
+                </div>
             </div>
         </div>
     </div>
