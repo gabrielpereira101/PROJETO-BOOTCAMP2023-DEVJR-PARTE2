@@ -51,8 +51,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
+    
     input {
         margin: 10px;
         padding: 10px;
@@ -64,9 +66,9 @@
     .retangulos{
         
         background-color: blue;
-        width: 30%;
+        width: 25%;
         margin: 10px;
-        height: 220px;
+        height: 270px;
 
         }
 
@@ -78,9 +80,44 @@
         padding: 10px;
         position: relative;
         top: 50%;
-        transform: translateY(-70%);
+        transform: translateY(-80%);
         text-align: center;
     }
+    .retangulos object {
+        height: 60%;
+    }
+
+    .icone1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50%;
+    }
+
+    .icone2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60%;
+    }
+
+    .icone3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(-1);
+        height: 50%;
+    }
+
+    .retangulos object {
+  height: 60%;
+  filter: brightness(0) invert(1);
+}
+
+
+
 </style>
 
 <body>
@@ -108,12 +145,15 @@
             <div class="retangulos_c">
                 <div class="retangulos">
                     esporte
+                    <object data="icone1.svg" type="image/svg+xml"></object>
                 </div>
                 <div class="retangulos">
                     simulação
+                    <object data="icone2.svg" type="image/svg+xml"></object>
                 </div>
                 <div class="retangulos">
                     estratégia
+                    <object data="icone3.svg" type="image/svg+xml"></object>
                 </div>
             </div>
         </div>
